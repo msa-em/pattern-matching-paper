@@ -17,4 +17,3 @@ Example widget.
 :placeholder: ./figures/example_widget_placeholder.png
 Example widget.
 :::
-
