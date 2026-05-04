@@ -94,6 +94,7 @@ The signal mask blocks out the direct beam region, the Al Bragg disks and higher
 After calculating the match scores, the patterns are labelled to produce a phase map (step 2.2). 
 This is normally done by assigning the phase corresponding to the highest NCC score. 
 Phase labelling was also done using the same prioritisation scheme as in the previous work [@Thronsen2024], to ensure a fair comparison between the model system phase map and the ground truth. 
+To report a quantitative similarity metric, the phase mapping accuracy was defined as the percentage of patterns for which the phase labelling in the resulting phase map was identical to that in the ground truth. 
 
 The map of the highest NCC scores per probe position is inspected to identify low maximum NCC scores and thereby patterns that do not resemble any of the template patterns to a sufficient degree. 
 The NCC score map is thresholded to reveal the lowest NCC scores, and additional templates can then be searched for within these low match score regions (step 2.3). 

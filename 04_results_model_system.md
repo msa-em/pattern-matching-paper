@@ -5,13 +5,25 @@ title: Results and discussion
 ## The model system
 
 Figure 4 presents the six phase maps resulting from using the three ways of defining templates (A: simulations; B: manual; C: NMF) and two ways of phase labelling (maximum NCC; prioritisation scheme), together with the ground truth. 
-\hl{Antar ground truth inkluderes i den interaktive?}
 The phase maps are diplayed besides their corresponding difference maps that shows correspondence to ground truth in black and any discrepancies in white. 
 The main difference between the two phase labelling strategies is whether or not the $\uptheta'$\textsubscript{$\langle001\rangle$} plates that give only a few weak Bragg disks are prioritised over overlapping T\textsubscript{1} segments. 
 Mislabeling at or near phase interfaces is a common feature in all the phase maps, due to weak precipitate Bragg disks, and/or strain causing a difference in Bragg disk positions. 
 The same was reported in the previous study [@Thronsen2024], where it was also pointed out that such artefacts are relatively harmless unless precipitate size statistics is to be extracted from the phase maps. 
-The accuracies of the phase maps relative to the ground truth are summarised in Table 3. 
+The accuracies of the phase maps relative to the ground truth are summarised in Table [](#table3). 
 All yield accuracies of $\approx$99\%, demonstrating a strong agreement between the derived phase maps, the ground truth phase map, and the previously presented results [@Thronsen2024]. 
+
+```{list-table} Phase mapping accuracy for three different approaches (A-C) of defining template patterns for the Al-Cu-Li model system dataset. The accuracy is obtained by comparing to ground truth and is reported for two labelling schemes: highest NCC score and phase priority. 
+:header-rows: 1
+:name: table3
+* - Template type
+  - (A) Simulations
+  - (B) Manual selection
+  - (C) NMF-guided selection
+* - Accuracy (\%) 
+  - 98.65 or 98.72
+  - 98.84 or 98.95
+  - 98.90 or 99.01 
+```
 
 \setkeys{Gin}{width=.7\linewidth}
 ![](./figures/priority.png "Will be changed to INTERACTIVE version.")
