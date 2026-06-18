@@ -110,12 +110,14 @@ project:
     - title: Materials and Methods
       children:
         - file: 02_materials.md
-        - file: 03_methods.md
+        - file: 03_data.md
+        - file: 04_templates.md
+        - file: 05_matching.md
     - title: Results and discussion
       children:
-        - file: 04_results_model_system.md
-        - file: 05_results_test_system.md
-    - file: 06_conclusion.md
+        - file: 06_results_model_system.md
+        - file: 07_results_test_system.md
+    - file: 08_conclusion.md
     - title: Supplementary
       children:
         - file: 00_example.md
