@@ -14,9 +14,8 @@ where $I_\text{p}(k_x,k_y)$ and $I_\text{t}(k_x,k_y)$ are the intensities of a p
 Only intensities included within a signal mask are included in this NCC calculation. 
 The signal mask blocks out the direct beam region, the Al Bragg disks and higher scattering angles, so that these regions are not considered. 
 
-:::{figure} 
+:::{figure} ./figures/pm.png
 :name: fig_pm
-:placeholder: ./figures/pm.png
 Schematic workflow of pattern matching: (2.0) Define template patterns, (2.1) match each pattern with all the templates within a signal-masked region, (2.2) label patterns according to the match scores, and (2.3) identify unlabelled patterns that can be used as basis for defining new templates.
 :::
 

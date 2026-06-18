@@ -37,6 +37,12 @@ The HAADF-STEM image shows connected $\beta''$ sub-units, known as $\beta''$-eye
 No perfect $\beta''$ unit cell can be found, but the characteristics of the connected $\beta''$-eyes are still picked up in the PED patterns. 
 The lower right part is more disordered and has a less clear PED pattern, which results in this region instead being labelled Si network. 
 
+:::{figure} ./figures/example_widget_placeholder.png
+:name: fig_6xxxmap
+DRAFT Interactive figure: Precipitate A. (!All will be combined into one interactive figure with the same figure caption!)
+(a) Phase map of the Al-Mg-Si-Cu alloy test dataset. For precipitates named A-I, the SPED PM-based phase labelling is compared to manual labelling based on HAADF-STEM in (b), which shows from left to right: a phase map crop-out, PED patterns from single-phase precipitate regions next to their corresponding best-matching templates, and FFT magnitude images and a manually labelled HAADF-STEM image of the same precipitate. 
+:::
+
 Overall, the phase labelling from PM corresponds well to that achieved by manual labelling of atomically-resolved HAADF-STEM images. 
 This substantiates that the PM workflow can be used for reliable phase mapping, even for hybrid precipitates that are composed of different single-phase segments. 
 The method is capable of capturing small, yet significant, differences in the PED patterns of structurally similar phases, as exemplified by the differentiation between the L and C phases. 
@@ -50,9 +56,3 @@ The same can, however, be said for labelling based on HAADF-STEM images, where p
 The border between hybrid and partly disordered precipitate regions can be difficult to define. 
 In this regard, a unified precipitate phase classification scheme, which consideres hybrid and partly disordered precipitate regions, would be invaluable and facilitate comparison across research groups. 
 This goes far beyond the validation of the PM approach which is the goal of the current work. 
-
-:::{figure} ./figures/example_widget_placeholder.png
-:name: fig_6xxxmap
-DRAFT Interactive figure: Precipitate A. (!All will be combined into one interactive figure with the same figure caption!)
-(a) Phase map of the Al-Mg-Si-Cu alloy test dataset. For precipitates named A-I, the SPED PM-based phase labelling is compared to manual labelling based on HAADF-STEM in (b), which shows from left to right: a phase map crop-out, PED patterns from single-phase precipitate regions next to their corresponding best-matching templates, and FFT magnitude images and a manually labelled HAADF-STEM image of the same precipitate. 
-:::

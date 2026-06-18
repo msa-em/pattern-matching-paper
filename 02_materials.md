@@ -11,7 +11,7 @@ Details on the Al-Cu-Li alloy composition, thermo-mechanical treatment, and TEM 
 The alloy contains two distinct and co-existing plate-shaped phases, namely $\theta$'-Al$_{2}$Cu and T$_{1}$-Al$_{2}$CuLi. 
 Their space groups and lattice parameters are listed in Table [](#table1). 
 Both have distinct orientation relationships with the host matrix. 
-$\theta'$ grows along $\lbrace001\rbrace_{Al}$ planes, while T$_1$ grows along $\lbrace111\rbrace_{Al}$ planes [@T1_abInitio; @inSitu_tp]. 
+$\theta'$ grows along $\lbrace001\rbrace_{Al}$ planes, while T$_1$ grows along $\lbrace111\rbrace_{Al}$ planes [@Dwyer2011; @Liu2017]. 
 Since the precipitates have distinct morphologies, they can readily be distinguished in bright- or dark-field images, and/or by their unique diffraction patterns when viewed along one of the main axes of the Al matrix [@Thronsen2024]. 
 Based on the known orientation relationships, there are six unique diffraction patterns that can be found in this alloy when the Al matrix is oriented along $\langle001\rangle$ zone axis. 
 These six unique patterns are found in the model SPED dataset and one example of each is displayed in Figure 1(a).
@@ -77,7 +77,7 @@ Thus, there are several challenges to overcome to achieve accurate SPED phase ma
 * - C-Mg$_{4}$AlSi$_{3+x}$Cu$_{1-x}$
   - P$2_1$/m (11)
   - $a = 10.32$, $b = 4.05$, $c = 8.10$, $\beta = 100.9^\circ$
-  - [@torsaeter2012]
+  - [@torsaeter2012, Thronsen2020]
 * - Q'-
   - P$6_3$ (174)
   - $a = 10.32$, $c = 4.05$

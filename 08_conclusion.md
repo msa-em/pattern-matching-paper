@@ -2,7 +2,7 @@
 title: Conclusion
 ---
 
-Pattern matching (PM) is introduced as a semi-automatic data analysis method for phase mapping of scanning precession electron diffraction (SPED) datasets. 
+PM is introduced as a semi-automatic data analysis method for phase mapping of SPED datasets. 
 The workflow includes an effective pre-processing routine that enhances Bragg disks and greatly reduces data size. 
 PM labels diffraction patterns by comparing them either to simulated template patterns or template patterns extracted from the dataset itself, using normalised cross-correlation as metric. 
 The extracted template patterns can be manually selected or chosen based on machine learning algorithms like non-negative matrix factorisation. 
