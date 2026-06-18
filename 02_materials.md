@@ -41,7 +41,7 @@ These six unique patterns are found in the model SPED dataset and one example of
 ## The Al-Mg-Si-Cu alloy test system
 
 The test SPED dataset was collected from an Al-Mg-Si-Cu alloy. 
-Details on the chemical composition, thermo-mechanical processing, and TEM specimen preparation are provided elsewhere [@JAS3]. 
+Details on the chemical composition, thermo-mechanical processing, and TEM specimen preparation are provided elsewhere [@sorhaug2026]. 
 Previous studies on this specific alloy show that the precipitate types that typically form are $\beta''$, L, C, $\beta'$, $\beta'_{Cu}$, Q', and Q [@Sunde2018; @Sunde2020]. 
 They grow as needles, rods or laths along the main axes of the matrix and have specific orientation relationships with the host \hl{lattice} [@Saito2018, @Andersen2018]. 
 Their similar shapes and sizes make them difficult to discern based on morphology. 
@@ -77,7 +77,7 @@ Thus, there are several challenges to overcome to achieve accurate SPED phase ma
 * - C-Mg$_{4}$AlSi$_{3+x}$Cu$_{1-x}$
   - P$2_1$/m (11)
   - $a = 10.32$, $b = 4.05$, $c = 8.10$, $\beta = 100.9^\circ$
-  - [@Torsaeter]
+  - [@torsaeter2012]
 * - Q'-
   - P$6_3$ (174)
   - $a = 10.32$, $c = 4.05$

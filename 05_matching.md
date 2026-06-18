@@ -1,17 +1,18 @@
 ---
 title: Pattern matching
+numbering:
+  enumerator: 4.%s
 ---
 
 The major steps in the pattern matching workflow after pre-processing is schematically presented in Figure [](#fig_pm) for the model dataset. 
 After defining template patterns (step 2.0), matching is performed by calculating the normalised cross-correlation (NCC) score to all the template patterns, for each pre-processed PED pattern in the SPED dataset (step 2.1). 
-The NCC match score is defined as \cite{NCC}: \hl{Obs! sum-tegnet mangler...}
+The NCC match score is defined as \cite{NCC}: 
 \begin{align}
-    \frac{\sum_{k_x,k_y}\left[I_{\text{Pat.}}(k_x,k_y)-\overline{I_{\text{Pat.}}}\right]\left[I_{\text{Temp.}}(k_x,k_y)-\overline{I_{\text{Temp.}}}\right]}{\sqrt{\sum_{k_x,k_y}\left[I_{\text{Pat.}}(k_x,k_y)-\overline{I_{\text{Pat.}}}\right]^2\sum_{k_x,k_y}\left[I_{\text{Temp.}}(k_x,k_y)-\overline{I_{\text{Temp.}}}\right]^2}},
+    \frac{\sum_{k_x,k_y}\left[I_{\text{p}}(k_x,k_y)-\overline{I_{\text{p}}}\right]\left[I_{\text{t}}(k_x,k_y)-\overline{I_{\text{t}}}\right]}{\sqrt{\sum_{k_x,k_y}\left[I_{\text{p}}(k_x,k_y)-\overline{I_{\text{p}}}\right]^2\sum_{k_x,k_y}\left[I_{\text{t}}(k_x,k_y)-\overline{I_{\text{t}}}\right]^2}},
 \end{align}
 where $I_\text{p}(k_x,k_y)$ and $I_\text{t}(k_x,k_y)$ are the intensities of a pre-processed PED pattern and a template pattern, respectively, and $\overline{I_\text{p}}$ and $\overline{I_\text{t}}$ are their respective average intensities. 
 Only intensities included within a signal mask are included in this NCC calculation. 
 The signal mask blocks out the direct beam region, the Al Bragg disks and higher scattering angles, so that these regions are not considered. 
-% intensity at pixel $(k_x,k_y)$, respectively
 
 :::{figure} 
 :name: fig_pm

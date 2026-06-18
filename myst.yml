@@ -2,7 +2,7 @@
 version: 1
 project:
   id: pm-paper-1
-  title: Analysing scanning precession electron diffraction data using pattern matching - phase mapping of aluminium precipitates
+  title: 'Analysing scanning precession electron diffraction data using pattern matching: phase mapping of aluminium precipitates'
   description: Repo for PM paper.
   short_title: Pattern matching
   keywords:
@@ -26,8 +26,8 @@ project:
       token: '512ac78f14e1141db1fac17e8b4099c1e5bc7d589518b38c'
   open_access: true
   license: CC-BY-4.0
-  banner: banner.png
-  thumbnail: thumbnail.webp
+  #banner: banner.png
+  #thumbnail: thumbnail.webp
   date: 2026-06-18
   history:
     submitted: 2026-06-30

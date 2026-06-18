@@ -2,7 +2,7 @@
 title: Introduction
 ---
 
-Four-dimensional scanning transmission electron microscopy (4D-STEM) involves raster scanning an electron beam while recording two-dimensional electron diffraction patterns at each probe position [@ophus2019]. 
+Four-dimensional scanning transmission electron microscopy (4D-STEM) involves raster scanning an electron beam while recording two-dimensional electron diffraction patterns at each probe position [@Ophus2019]. 
 By categorising each diffraction pattern based on which crystal structure or phase it corresponds to, phase maps can be obtained. 
 These maps reveal the morphology, spatial distribution, and proportion of various phases with the high spatial resolution offered by scanning transmission electron microscopy (STEM). 
 Such information is often crucial to explain the properties of multi-phase materials, for instance metal alloys that contain embedded nanoscale precipitates. 
@@ -41,4 +41,4 @@ The approach also implements an efficient pre-processing strategy that highly be
 This study demonstrates and benchmarks the PM methodology on the SPED dataset from the model Al-Cu-Li alloy that has previously been released open-source together with a corresponding ground truth phase map [@Thronsen2024]. 
 The workflow is further validated by applying it to the more challenging precipitate structures in an Al-Mg-Si-Cu alloy that contains both partly disordered and structurally similar precipitates [@Sunde2020; @JAS3]. 
 Overall, this study aims to establish a user-friendly and robust framework for SPED phase mapping that handles both known and unknown crystal structures. 
-The workflow is released open-source, and it can be further modified and readily applied to other material systems, for instance it has already been applied to Al-Zn-Mg-Cu alloys [@Ryggetangen2025]. 
+The workflow is released open-source, and it can be further modified and readily applied to other material systems, for instance it has already been applied to Al-Mg-Si-Cu alloys in a related publication [@sorhaug2026] and to Al-Zn-Mg-Cu alloys [@Ryggetangen2025]. 

@@ -26,7 +26,7 @@ A schematic figure of the data collection is presented in [](#fig_preprocessing)
 (a) Schematic figure showing SPED data collection in the Al-Cu-Li model alloy system. The TEM specimen is represented by the ground truth phase map, and six unique PED patterns are displayed. (b) Schematic showing SPED data pre-processing, which includes (1.0) centring the direct beam in each PED pattern, (1.1) binning and cropping the signal to exclude periods shorter than the $\lbrace220\rbrace$ Al reflections, (1.2) summing partly overlapping half-patterns, (1.3) cross-correlating the patterns with a binary disk, and (1.4) thresholding the patterns. 
 :::
 
-The test dataset from the Al-Mg-Si-Cu alloy was collected specifically for this work and has been made avaibale open source via Zenodo [@Zenodo2024]. 
+The test dataset from the Al-Mg-Si-Cu alloy was collected specifically for this work and has been made avaibale open source via Zenodo [@Sorhaug2024zenodo]. 
 The nominal probe size was 0.5 nm, the exposure time per pattern was 40 ms, and the step size was 1.4 nm. 
 The precession angle was measured to 0.53&deg; (9.3 mrad). 
 To complement the SPED phase mapping, atomically resolved high-angle annular dark-field (HAADF) STEM images were collected from some of the same precipitates that were included in the SPED test dataset. 

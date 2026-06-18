@@ -42,13 +42,12 @@ H. L. Korsvold is acknowledged for making the Al-Mg-Si-Cu TEM specimen. This wor
 
 +++ {"part": "competing interests"}
 
-All authors declared no conflicts of interest.
+The authors declare that they have no known conflicts of interest.
 
 +++
 
 +++ {"part": "data availability"} 
 
-The used raw data are available in the Zenodo repository @[thronsen_2022_6645396, sorhaug_2024_11350508]. The used workflow is released open source. 
+The used raw data are available in the Zenodo repository @[Thronsen2022zenodo, sorhaug2024zenodo]. The used workflow is released open source. 
 
 +++
-
