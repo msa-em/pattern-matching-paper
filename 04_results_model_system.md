@@ -1,8 +1,6 @@
 ---
-title: Results and discussion
+title: The model system
 ---
-
-## The model system
 
 Figure [](#fig_priority) presents the six phase maps resulting from using the three ways of defining templates (A: simulations; B: manual; C: NMF) and two ways of phase labelling (maximum NCC; prioritisation scheme), together with the ground truth. 
 The phase maps are diplayed besides their corresponding difference maps that shows correspondence to ground truth in black and any discrepancies in white. 
@@ -22,7 +20,7 @@ All yield accuracies of $\approx$99\%, demonstrating a strong agreement between 
 * - Accuracy (\%) 
   - 98.65 or 98.72
   - 98.84 or 98.95
-  - 98.90 or 99.01 
+  - 98.90 or 98.99
 ```
 
 :::{figure} :name: fig_priority INTERACTIVE. :::

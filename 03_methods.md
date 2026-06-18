@@ -17,10 +17,12 @@ The SPED datasets were collected on a 256$\times$256 pixels Medipix3 MerlinEM di
 The model dataset from the Al-Cu-Li system was collected for a previous publication [@Thronsen2024] and was in this work retrieved from the open data repository Zenodo [@Thronsen2022zenodo]. 
 For this dataset, the nominal probe size was set to 1.3 nm, the exposure time per pattern was set to 10 ms, and the step size was set to 4.6 nm. 
 The convergence semi-angle and precession angle were measured to 1.1 mrad and 1.0&deg; (17.5 mrad), respectively. 
-A schematic figure of the data collection is presented in Figure [](#fig_preprocessing) (a), which shows the ground truth phase map together with six representative unique diffraction patterns from the various phases in this alloy. 
+A schematic figure of the data collection is presented in Figure [](#fig_preprocessing)(a), which shows the ground truth phase map together with six representative unique diffraction patterns from the various phases in this alloy. 
 
-:::{figure} ./figures/data_collection_preprocessing.png :name: fig_preprocessing 
-(a) Schematic figure showing SPED data collection in the Al-Cu-Li model alloy system. The TEM specimen is represented by the ground truth phase map, and six unique PED patterns are displayed. (b) Schematic showing SPED data pre-processing, which includes (1.0) centring the direct beam in each PED pattern, (1.1) binning and cropping the signal to exclude periods shorter than the $\lbrace220\rbrace$ Al reflections, (1.2) summing partly overlapping half-patterns, (1.3) cross-correlating the patterns with a binary disk, and (1.4) thresholding the patterns. :::
+:::{figure} ./figures/data_collection_preprocessing.png 
+:name: fig_preprocessing
+(a) Schematic figure showing SPED data collection in the Al-Cu-Li model alloy system. The TEM specimen is represented by the ground truth phase map, and six unique PED patterns are displayed. (b) Schematic showing SPED data pre-processing, which includes (1.0) centring the direct beam in each PED pattern, (1.1) binning and cropping the signal to exclude periods shorter than the $\lbrace220\rbrace$ Al reflections, (1.2) summing partly overlapping half-patterns, (1.3) cross-correlating the patterns with a binary disk, and (1.4) thresholding the patterns. 
+:::
 
 The test dataset from the Al-Mg-Si-Cu alloy was collected specifically for this work and has been made avaibale open source via Zenodo [@Zenodo2024]. 
 The nominal probe size was 0.5 nm, the exposure time per pattern was 40 ms, and the step size was 1.4 nm. 
@@ -50,8 +52,10 @@ This option is included in the advanced notebook only, to demonstrate the flexib
 
 For the test system, only the machine learning-based approach (C) was used to define template patterns since the unique diffraction patterns are not known in advance. 
 
-:::{figure} ./figures/template_selections.png :name: fig_templates 
-Schematic illustration of the three approaches used to define template patterns: (a) simulate patterns, (b) manually select regions with unqiue patterns, or (c) use NMF to find regions with unqiue patterns. :::
+:::{figure} ./figures/template_selections.png 
+:name: fig_templates 
+Schematic illustration of the three approaches used to define template patterns: (a) simulate patterns, (b) manually select regions with unqiue patterns, or (c) use NMF to find regions with unqiue patterns. 
+:::
 
 #### (A) Simulations: 
 The five expected unique diffraction patterns were kinematically simulated using the open-source python library diffsims [@diffsims], based on the known crystal structures (Table S-II) and expected orientation relationships [@Thronsen2024]. 
@@ -77,7 +81,7 @@ This means that the NMF results were not used as templated directly; NMF was rat
 
 ## Pattern matching
 The major steps in the pattern matching workflow after pre-processing is schematically presented in Figure [](#fig_pm) for the model dataset. 
-After defining template patterns (step 2.0), matching is performed by calculating the Normalised cross-correlation (NCC) score to all the template patterns, for each pre-processed PED pattern in the SPED dataset (step 2.1). 
+After defining template patterns (step 2.0), matching is performed by calculating the normalised cross-correlation (NCC) score to all the template patterns, for each pre-processed PED pattern in the SPED dataset (step 2.1). 
 The NCC match score is defined as \cite{NCC}: \hl{Obs! sum-tegnet mangler...}
 \begin{align}
     \frac{\sum_{k_x,k_y}\left[I_{\text{Pat.}}(k_x,k_y)-\overline{I_{\text{Pat.}}}\right]\left[I_{\text{Temp.}}(k_x,k_y)-\overline{I_{\text{Temp.}}}\right]}{\sqrt{\sum_{k_x,k_y}\left[I_{\text{Pat.}}(k_x,k_y)-\overline{I_{\text{Pat.}}}\right]^2\sum_{k_x,k_y}\left[I_{\text{Temp.}}(k_x,k_y)-\overline{I_{\text{Temp.}}}\right]^2}},
@@ -87,8 +91,11 @@ Only intensities included within a signal mask are included in this NCC calculat
 The signal mask blocks out the direct beam region, the Al Bragg disks and higher scattering angles, so that these regions are not considered. 
 % intensity at pixel $(k_x,k_y)$, respectively
 
-:::{figure} ./figures/pm.png :name: fig_pm  
-Schematic workflow of pattern matching: (2.0) Define template patterns, (2.1) match each pattern with all the templates within a signal-masked region, (2.2) label patterns according to the match scores, and (2.3) identify unlabelled patterns that can be used as basis for defining new templates. :::
+:::{figure} 
+:name: fig_pm
+:placeholder: ./figures/pm.png
+Schematic workflow of pattern matching: (2.0) Define template patterns, (2.1) match each pattern with all the templates within a signal-masked region, (2.2) label patterns according to the match scores, and (2.3) identify unlabelled patterns that can be used as basis for defining new templates.
+:::
 
 After calculating the match scores, the patterns are labelled to produce a phase map (step 2.2). 
 This is normally done by assigning the phase corresponding to the highest NCC score. 

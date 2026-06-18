@@ -29,19 +29,26 @@ The workflow and datasets are available as open-source resources.
 +++{"part":"epigraph"}
 :::{warning} Pre-print
 This article has not yet been peer-reviewed.  
-_Updated 2024 August 27_
+_Updated 2026 June 18
 :::
 
 +++
 
 +++ {"part": "acknowledgements"} 
 
-Add your acknowledgments, if any, here.
+H. L. Korsvold is acknowledged for making the Al-Mg-Si-Cu TEM specimen. This work was supported by the Research Council of Norway (RCN) projects “In-SANE” (project number 301176) and iCSI (237922), and the TEM work was conducted at the NORTEM infrastructure (197405).
 
 +++
 
-+++ {"part": "competing interests"} 
-## Competing Interests
++++ {"part": "competing interests"}
 
-Add your competing interests, if any, here.
+All authors declared no conflicts of interest.
+
 +++
+
++++ {"part": "data availability"} 
+
+The used raw data are available in the Zenodo repository @[thronsen_2022_6645396, sorhaug_2024_11350508]. The used workflow is released open source. 
+
++++
+

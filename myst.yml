@@ -1,34 +1,39 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 project:
-  id: msa-em-change-this-to-repo-name-followed-by-the-number-1
-  title: Elemental Microscopy Quickstart
-  description: A minimal repository to be used as quickstart for the Elemental Microscopy journal.
-  short_title: EM Quickstart
+  id: pm-paper-1
+  title: Analysing scanning precession electron diffraction data using pattern matching - phase mapping of aluminium precipitates
+  description: Repo for PM paper.
+  short_title: Pattern matching
   keywords:
-    - Keyword One
-    - Keyword Two
-    - Spell Out Acronyms
-  github: https://github.com/msa-em/change-this-to-repo-name
-  jupyter: true
+    - Four-dimensional scanning transmission electron microscopy
+    - Scanning precession electron diffraction
+    - Phase mapping
+    - Pattern matching
+    - Aluminium alloys
+    - Al-Cu-Li
+    - Al-Mg-Si-Cu
+    - Precipitates
+  github: https://github.com/msa-em/pm-paper-1
+  # jupyter: true
   #  jupyter:
   #    binder:
   #      url: https://y2j74k9mn0bz.curvenote.dev/services/binder/
   #      repo: msa-em/change-this-to-repo-name
-  #  jupyter:
-  #    server:
-  #      url: 'http://localhost:8888'
-  #      token: '512ac78f14e1141db1fac17e8b4099c1e5bc7d589518b38c'
+  jupyter:
+    server:
+      url: 'http://localhost:8888'
+      token: '512ac78f14e1141db1fac17e8b4099c1e5bc7d589518b38c'
   open_access: true
   license: CC-BY-4.0
   banner: banner.png
   thumbnail: thumbnail.webp
-  date: 2024-08-27
+  date: 2026-06-18
   history:
-    submitted: 2023-08-27
-    published: 2024-08-27
+    submitted: 2026-06-30
+    published: 2026-12-31
   requirements:
-    - 'environment.yml'
+    - 'pm-paper-env.yml'
   resources:
     - 'notebooks/**/*'
   references:
@@ -38,57 +43,81 @@ project:
   exclude:
     - README.md
   authors:
-    - id: cophus
-      name: Colin Ophus
-      corresponding: true
-      email: cophus@gmail.com
-      orcid: 0000-0003-2348-8558
+    - id: jorgeas
+      name: Jørgen A. Sørhaug
+      email: jorgen.sorhaug@sintef.no
+      orcid: 0009-0004-3482-9199
       affiliations:
-        - id: ncem
-          department: National Center for Electron Microscopy, Molecular Foundry
-          institution: Lawrence Berkeley National Laboratory
-          address: 1 Cyclotron Road, Berkeley, CA, USA, 94720
-          ror: 02jbv0t02
+        - id: sintef
+          department: Department of Materials Technology
+          institution: SINTEF Manufacturing
+          address: Raufoss, NO-2831 Norway
       roles:
         - Conceptualization
+        - Data curation
+        - Formal analysis
+        - Investigation
+        - Methodology
+        - Software
+        - Visualization
+        - Writing - original draft (lead)
+    - id: randih
+      name: Randi Holmestad
+      email: randi.holmestad@ntnu.no
+      orcid: 0000-0002-4274-5794
+      affiliations:
+        - id: ify
+          department: Department of Physics
+          institution: Norwegian University of Science and Technology (NTNU)
+          address: Trondheim, Norway
+      roles:
         - Funding acquisition
         - Project administration
         - Supervision
-        - Visualization
-        - Writing - original draft
-    - id: garnavides
-      name: Georgios Varnavides
-      email: gvarnavides@berkeley.edu
-      orcid: 0000-0001-8338-3323
+        - Writing – review and editing
+    - id: tinabe
+      name: Tina Bergh
+      corresponding: true
+      email: tina.bergh@ntnu.no
+      orcid: 0000-0003-3757-3876
       affiliations:
-        - id: miller
-          department: Miller Institute for Basic Research in Science
-          institution: University of California, Berkeley
-          address: 468 Donner Lab, Berkeley, CA, USA, 94720
-          ror: 01an7q238
+        - id: ikp
+          department: Department of Chemical Engineering
+          institution: Norwegian University of Science and Technology (NTNU)
+          address: Trondheim, Norway
       roles:
         - Conceptualization
+        - Formal analysis
+        - Methodology
         - Software
         - Validation
         - Visualization
         - Writing - original draft
-  funding:
-    - statement: We thank the Microscopy Society of America for sponsoring this project.
-      recipients:
-        - cophus
-        - garnavides
-    - statement: Work at the Molecular Foundry was supported by the Office of Science, Office of Basic Energy Sciences, of the U.S. Department of Energy under Contract No. DE-AC02-05CH11231.
-      id: DE-AC02-05CH11231
-      sources:
-        - name: Office of Science, Office of Basic Energy Sciences, of the U.S. Department of Energy
-      recipients:
-        - cophus
   abbreviations:
     4D-STEM: four dimensional scanning transmission electron microscopy
+    STEM: scanning transmission electron microscopy
+    SPED: scanning precession electron diffraction
+    PED: precession electron diffraction
+    NMF: non-negative matrix factorisation
+    PM: pattern matching
+    NCC: normalised cross-correlation
     FFT: fast Fourier transform
     HAADF: high angle annular dark field
     HRTEM: high resolution transmission electron microscopy
-    M&M: Microscopy and Microanalysis
-    STEM: scanning transmission electron microscopy
+  toc:
+    - file: 00_index.md
+    - file: 01_introduction.md
+    - title: Materials and Methods
+      children:
+        - file: 02_materials.md
+        - file: 03_methods.md
+    - title: Results and discussion
+      children:
+        - file: 04_results_model_system.md
+        - file: 05_results_test_system.md
+    - file: 06_conclusion.md
+    - title: Supplementary
+      children:
+        - file: 00_example.md
 site:
   template: book-theme

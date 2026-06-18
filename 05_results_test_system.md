@@ -1,4 +1,6 @@
-## The test system
+---
+title: The test system
+---
 
 The phase map of the Al-Mg-Si-Cu alloy test dataset is presented in Figure [](#fig_6xxxmap)(a), and it is labelled according to the known phases $\upbeta''$, L, and C. 
 Two broader labels are included for patterns that could not be assigned to one specific phase. 

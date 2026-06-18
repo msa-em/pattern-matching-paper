@@ -1,5 +1,7 @@
 ---
 title: Materials
+numbering:
+  enumerator: 1.%s
 ---
 
 ## The Al-Cu-Li alloy model system
