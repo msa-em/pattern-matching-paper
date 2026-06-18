@@ -1,5 +1,7 @@
 ---
 title: Defining templates
+numbering:
+  enumerator: 3.%s
 ---
 
 Three approaches of defining template patterns were used for the model dataset, as presented schematically in Figure [](#fig_templates) and explained in the following. 

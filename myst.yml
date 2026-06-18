@@ -6,15 +6,15 @@ project:
   description: Repo for PM paper.
   short_title: Pattern matching
   keywords:
-    - Four-dimensional scanning transmission electron microscopy
-    - Scanning precession electron diffraction
-    - Phase mapping
-    - Pattern matching
-    - Aluminium alloys
+    - four-dimensional scanning transmission electron microscopy
+    - scanning precession electron diffraction
+    - phase mapping
+    - pattern matching
+    - aluminium alloys
     - Al-Cu-Li
     - Al-Mg-Si-Cu
-    - Precipitates
-  github: https://github.com/msa-em/pm-paper-1
+    - precipitates
+  # github: https://github.com/msa-em/pm-paper-1
   # jupyter: true
   #  jupyter:
   #    binder:
@@ -121,5 +121,7 @@ project:
     - title: Supplementary
       children:
         - file: 00_example.md
+  bibliography:
+    - refs.bib
 site:
   template: book-theme

@@ -1,5 +1,7 @@
 ---
 title: Methods
+numbering:
+  enumerator: 2.%s
 ---
 
 The full workflows are released open-source on github [@PMgithub]. 
@@ -17,7 +19,7 @@ The SPED datasets were collected on a 256$\times$256 pixels Medipix3 MerlinEM di
 The model dataset from the Al-Cu-Li system was collected for a previous publication [@Thronsen2024] and was in this work retrieved from the open data repository Zenodo [@Thronsen2022zenodo]. 
 For this dataset, the nominal probe size was set to 1.3 nm, the exposure time per pattern was set to 10 ms, and the step size was set to 4.6 nm. 
 The convergence semi-angle and precession angle were measured to 1.1 mrad and 1.0&deg; (17.5 mrad), respectively. 
-A schematic figure of the data collection is presented in Figure [](#fig_preprocessing)(a), which shows the ground truth phase map together with six representative unique diffraction patterns from the various phases in this alloy. 
+A schematic figure of the data collection is presented in [](#fig_preprocessing)(a), which shows the ground truth phase map together with six representative unique diffraction patterns from the various phases in this alloy. 
 
 :::{figure} ./figures/data_collection_preprocessing.png 
 :name: fig_preprocessing
@@ -35,7 +37,7 @@ The HAADF-STEM images were manually labelled based on pre-knowledge of the atomi
 ## Data processing
 
 The SPED datasets were pre-processed using the open source libraries hyperspy and pyxem [@hyperspy; @pyxem]. 
-The pre-processing steps are schematically summarised in Figure [](#fig_preprocessing)(b), and consist of: 
+The pre-processing steps are schematically summarised in [](#fig_preprocessing)(b), and consist of: 
 (1.0) direct beam centring, (1.1) signal cropping and binning, (1.2) summation of half-patterns, (1.3) cross-correlating the patterns with a binary disk, and (1.4) thresholding the patterns. 
 The model dataset and the test dataset were pre-processed in the same way, with one exception. 
 The difference was that the test dataset was subjected to an additional diffraction pattern averaging step prior to (1.3), to improve the signal-to-noise. 

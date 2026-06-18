@@ -4,7 +4,7 @@ title: Introduction
 
 Four-dimensional scanning transmission electron microscopy (4D-STEM) involves raster scanning an electron beam while recording two-dimensional electron diffraction patterns at each probe position [@ophus2019]. 
 By categorising each diffraction pattern based on which crystal structure or phase it corresponds to, phase maps can be obtained. 
-These maps reveal the morphology, spatial distribution, and proportion of various phases with the high spatial resolution offered by STEM. 
+These maps reveal the morphology, spatial distribution, and proportion of various phases with the high spatial resolution offered by scanning transmission electron microscopy (STEM). 
 Such information is often crucial to explain the properties of multi-phase materials, for instance metal alloys that contain embedded nanoscale precipitates. 
 The 4D-STEM sub-category of scanning precession electron diffraction (SPED) is particularly well suited for phase mapping. 
 

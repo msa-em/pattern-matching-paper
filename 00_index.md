@@ -26,10 +26,10 @@ The workflow and datasets are available as open-source resources.
 +++
 
 
-+++{"part":"epigraph"}
++++{"part": "epigraph"}
 :::{warning} Pre-print
 This article has not yet been peer-reviewed.  
-_Updated 2026 June 18
+Updated 2026 June 18
 :::
 
 +++
