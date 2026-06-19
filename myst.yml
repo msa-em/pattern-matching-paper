@@ -60,7 +60,7 @@ project:
         - Methodology
         - Software
         - Visualization
-        - Writing - original draft (lead)
+        - Writing - original draft
     - id: randih
       name: Randi Holmestad
       email: randi.holmestad@ntnu.no
@@ -74,7 +74,7 @@ project:
         - Funding acquisition
         - Project administration
         - Supervision
-        - Writing – review and editing
+        - Writing – review & editing
     - id: tinabe
       name: Tina Bergh
       corresponding: true
@@ -118,7 +118,7 @@ project:
         - file: 06_results_model_system.md
         - file: 07_results_test_system.md
     - file: 08_conclusion.md
-    - title: Supplementary
+    - title: Notebooks
       children:
         - file: 00_example.md
   bibliography:

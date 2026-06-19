@@ -12,7 +12,7 @@ The same was reported in the previous study [@Thronsen2024], where it was also p
 The accuracies of the phase maps relative to the ground truth are summarised in [](#table3). 
 All yield accuracies of $\approx$99\%, demonstrating a strong agreement between the derived phase maps, the ground truth phase map, and the previously presented results [@Thronsen2024]. 
 
-:::{figure} ./figures/example_widget_placeholder.png
+:::{figure} ./figures/ground_truth_comparison_placeholder.png
 :name: fig_priority
 INTERACTIVE. 
 :::

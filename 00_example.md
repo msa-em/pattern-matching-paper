@@ -12,7 +12,7 @@ Example widget.
 :::
 ````
 
-:::{figure} #app:example_widget
+:::{figure} #app:example_notebook
 :name: fig_example_widget
 :placeholder: ./figures/example_widget_placeholder.png
 Example widget.

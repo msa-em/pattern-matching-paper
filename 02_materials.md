@@ -27,7 +27,7 @@ These six unique patterns are found in the model SPED dataset and one example of
 * - Al
   - Fm$\bar{3}$m (225)
   - $a = 4.04$
-  - 
+  - $-$
 * - $\theta$'-Al$_{2}$Cu
   - I$\bar{4}$m2 (119)
   - $a = 4.04$, $c = 5.80$
@@ -46,7 +46,7 @@ Previous studies on this specific alloy show that the precipitate types that typ
 They grow as needles, rods or laths along the main axes of the matrix and have specific orientation relationships with the host \hl{lattice} [@Saito2018; @Andersen2018]. 
 Their similar shapes and sizes make them difficult to discern based on morphology. 
 Some single precipitate particles are even composed of a mixture of multiple phases, referred to as hybrid precipitates. 
-Table [](#table2) lists information on the crystal structures of the precipitate phases. 
+[](#table2) lists information on the crystal structures of the precipitate phases. 
 The precipitates are built on a common lattice called the Si network, which exhibits a close to hexagonal symmetry along their long axes [@Marioara2007]. 
 The L phase is partly disordered and consists of sub-units of the C and Q' phases, meaning that it does not have one specific crystal structure, yet, it is still built on the Si network [@Marioara2007]. 
 Thus, there are several challenges to overcome to achieve accurate SPED phase mapping of this alloy, including both similar and unknown structures. 
@@ -59,7 +59,7 @@ Thus, there are several challenges to overcome to achieve accurate SPED phase ma
   - Lattice parameter(s) [Å]
   - Reference
 * - Si network
-  - 
+  - $-$
   - $a = 3.93$, $c = 4.05$
   - [@Cayron1999; @Marioara2007]
 * - $\beta''$-Mg$_{5}$Al$_{2}$Si$_{4}$
@@ -71,14 +71,14 @@ Thus, there are several challenges to overcome to achieve accurate SPED phase ma
   - $a = 7.15$, $c = 12.15$ 
   - [@Vissers2007]
 * - L 
-  - 
-  - 
+  - $-$
+  - $-$
   - [@Marioara2007]
 * - C-Mg$_{4}$AlSi$_{3+x}$Cu$_{1-x}$
   - P$2_1$/m (11)
   - $a = 10.32$, $b = 4.05$, $c = 8.10$, $\beta = 100.9^\circ$
   - [@torsaeter2012; @Thronsen2020]
-* - Q'-
+* - Q'-Al$_6$Mg$_6$Si$_7$Cu$_2$
   - P$6_3$ (174)
   - $a = 10.32$, $c = 4.05$
   - [@Torsaeter2008; @Wenner2017]
