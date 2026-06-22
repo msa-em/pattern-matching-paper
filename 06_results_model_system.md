@@ -12,7 +12,7 @@ The same was reported in the previous study [@Thronsen2024], where it was also p
 The accuracies of the phase maps relative to the ground truth are summarised in [](#table3). 
 All yield accuracies of $\approx$99\%, demonstrating a strong agreement between the derived phase maps, the ground truth phase map, and the previously presented results [@Thronsen2024]. 
 
-:::{figure} ./figures/ground_truth_comparison_placeholder.png
+:::{figure} ./figures/ground_truth_placeholder.png
 :name: fig_priority
 Al-Cu-Li alloy ground truth phase map displayed next to a phase map made by PM and the difference between the two. Template patterns are either (A) kinematically simulated, (B) averaged from manually selected regions in the dataset, or (C) averaged from the dataset according to thresholded NMF loadings. Phase labelling scheme is either based on maximum NCC score or according to the phase priority: (1) $\theta'_{\langle100\rangle}$, (2) T$_{1}$, and (3) $\theta'_{\langle001\rangle}$.
 :::
