@@ -4,7 +4,7 @@ numbering:
   enumerator: 5.%s
 ---
 
-[](#fig_priority) presents the six phase maps resulting from using the three ways of defining templates (A: simulations; B: manual; C: NMF) and two ways of phase labelling (maximum NCC; prioritisation scheme), together with the ground truth. 
+[](#fig_priority) presents an interactive figure where the six phase maps resulting from using the three ways of defining templates (A: simulations; B: manual; C: NMF) and two ways of phase labelling (maximum NCC; prioritisation scheme), together with the ground truth. 
 The phase maps are diplayed besides their corresponding difference maps that shows correspondence to ground truth in black and any discrepancies in white. 
 The main difference between the two phase labelling strategies is whether or not the $\theta$'$_{\langle001\rangle}$ plates that give only a few weak Bragg disks are prioritised over overlapping T$_{1}$ segments. 
 Mislabeling at or near phase interfaces is a common feature in all the phase maps, due to weak precipitate Bragg disks, and/or strain causing a difference in Bragg disk positions. 
@@ -14,7 +14,7 @@ All yield accuracies of $\approx$99\%, demonstrating a strong agreement between 
 
 :::{figure} ./figures/ground_truth_comparison_placeholder.png
 :name: fig_priority
-INTERACTIVE. 
+Al-Cu-Li alloy ground truth phase map displayed next to a phase map made by PM and the difference between the two. Template patterns are either (A) kinematically simulated, (B) averaged from manually selected regions in the dataset, or (C) averaged from the dataset according to thresholded NMF loadings. Phase labelling scheme is either based on maximum NCC score or according to the phase priority: (1) $\theta'_{\langle100\rangle}$, (2) T$_{1}$, and (3) $\theta'_{\langle001\rangle}$.
 :::
 
 ```{list-table} Phase mapping accuracy for three different approaches (A-C) of defining template patterns for the Al-Cu-Li model system dataset. The accuracy is obtained by comparing to ground truth and is reported for two labelling schemes: highest NCC score and phase priority. 
@@ -60,7 +60,7 @@ The missing unfamiliar T$_{1}$ segment highlighted in [](#fig_sim)(e) is now inc
 This updated phase map thus demonstrates that both pre-known and unfamiliar patterns can be identified and mapped after an additional iteration of searching for new templates. 
 This map also shows that overlapping crystals can be correctly labelled along with non-overlapping crystals, which suggests that the previously used phase prioritisation scheme [@Thronsen2024] becomes unnecessary. 
 
-:::{figure} ./figures/advanced.png 
+:::{figure} ./figures/advanced_placeholder.png 
 :name: fig_advanced  
 Al-Cu-Li alloy phase map from using NMF twice to identify template patterns from the SPED dataset. The phase map shows both single and pairs of overlapping precipitate phases, bent precipitate segments, and an unfamiliar crystal labelled as 'x'. 
 :::
