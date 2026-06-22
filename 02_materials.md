@@ -1,5 +1,5 @@
 ---
-title: Materials
+title: Alloys
 numbering:
   enumerator: 1.%s
 ---

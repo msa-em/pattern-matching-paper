@@ -120,7 +120,9 @@ project:
     - file: 08_conclusion.md
     - title: Notebooks
       children:
-        - file: 00_example.md
+        - file: ./notebooks/preprocessing.ipynb
+        - file: ./notebooks/ground_truth_comparison.ipynb
+        - file: ./notebooks/advanced_phase_map.ipynb
   bibliography:
     - refs.bib
 site:

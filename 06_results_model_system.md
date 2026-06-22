@@ -12,8 +12,9 @@ The same was reported in the previous study [@Thronsen2024], where it was also p
 The accuracies of the phase maps relative to the ground truth are summarised in [](#table3). 
 All yield accuracies of $\approx$99\%, demonstrating a strong agreement between the derived phase maps, the ground truth phase map, and the previously presented results [@Thronsen2024]. 
 
-:::{figure} ./figures/ground_truth_placeholder.png
+:::{figure} #app:ground_truth_comparison
 :name: fig_priority
+:placeholder: ./figures/ground_truth_placeholder.png
 Al-Cu-Li alloy ground truth phase map displayed next to a phase map made by PM and the difference between the two. Template patterns are either (A) kinematically simulated, (B) averaged from manually selected regions in the dataset, or (C) averaged from the dataset according to thresholded NMF loadings. Phase labelling scheme is either based on maximum NCC score or according to the phase priority: (1) $\theta'_{\langle100\rangle}$, (2) T$_{1}$, and (3) $\theta'_{\langle001\rangle}$.
 :::
 
@@ -46,7 +47,7 @@ The mislabelled segment inside the T$_{1}$ precipiate, shown in Figure [](#fig_s
 The selected PED patterns in (e) are overlayed with the simulated Bragg spots corresponding to the template of T$_{1-2}$, which is expected based on the ground truth. 
 The pattern in the mislabelled region does not, however, correspond to this simulated pattern, and the pattern represents a new unique diffraction pattern that was not included in the original template bank. 
 
-:::{figure} ./figures/pm_sim.png 
+:::{figure} ./figures/pm_sim.png
 :name: fig_sim
 PM of the model dataset with simulated templates. (a) Phase map, and (b) difference map with respect to the ground truth phase map. Three regions are highlighed where precipitate segments are incorrectly labelled according to the ground truth. (c)-(e) Zoomed-in maps from the highlighted regions with single PED patterns from indicated regions included underneath. The patterns are pre-processed until step 1.2 (left) and 1.4 (right). The patterns in (c) and (d) are overlayed with dashed circles that represent the disk positions in the two $\theta$'$_{\langle100\rangle}$ templates that are correct based on the ground truth. The diffraction patterns in (e) are overlayed with dashed circles showing the disk positions in templates from the expected T$_{1}$ phase. All PED patterns are plotted in log-scale, and overlayed with stars representing the centre spot (red) and the Al reflections (white).
 :::
@@ -60,7 +61,8 @@ The missing unfamiliar T$_{1}$ segment highlighted in [](#fig_sim)(e) is now inc
 This updated phase map thus demonstrates that both pre-known and unfamiliar patterns can be identified and mapped after an additional iteration of searching for new templates. 
 This map also shows that overlapping crystals can be correctly labelled along with non-overlapping crystals, which suggests that the previously used phase prioritisation scheme [@Thronsen2024] becomes unnecessary. 
 
-:::{figure} ./figures/advanced_placeholder.png 
+:::{figure} #app:advanced_phase_map
 :name: fig_advanced  
+:placeholder: ./figures/advanced_placeholder.png
 Al-Cu-Li alloy phase map from using NMF twice to identify template patterns from the SPED dataset. The phase map shows both single and pairs of overlapping precipitate phases, bent precipitate segments, and an unfamiliar crystal labelled as 'x'. 
 :::
