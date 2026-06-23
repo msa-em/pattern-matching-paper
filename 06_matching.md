@@ -6,7 +6,7 @@ numbering:
 
 The major steps in the pattern matching workflow after pre-processing is schematically presented in Figure [](#fig_pm) for the model dataset. 
 After defining template patterns (step 2.0), matching is performed by calculating the normalised cross-correlation (NCC) score to all the template patterns, for each pre-processed PED pattern in the SPED dataset (step 2.1). 
-The NCC match score is defined as \cite{NCC}: 
+The NCC match score is defined as [@NCC]: 
 \begin{align}
     \frac{\sum_{k_x,k_y}\left[I_{\text{p}}(k_x,k_y)-\overline{I_{\text{p}}}\right]\left[I_{\text{t}}(k_x,k_y)-\overline{I_{\text{t}}}\right]}{\sqrt{\sum_{k_x,k_y}\left[I_{\text{p}}(k_x,k_y)-\overline{I_{\text{p}}}\right]^2\sum_{k_x,k_y}\left[I_{\text{t}}(k_x,k_y)-\overline{I_{\text{t}}}\right]^2}},
 \end{align}
