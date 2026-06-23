@@ -110,17 +110,19 @@ project:
     - title: Materials and Methods
       children:
         - file: 02_materials.md
-        - file: 03_data.md
-        - file: 04_templates.md
-        - file: 05_matching.md
+        - file: 03_data_collection.md
+        - file: 04_data_processing.md
+        - file: 05_templates.md
+        - file: 06_matching.md
     - title: Results and discussion
       children:
-        - file: 06_results_model_system.md
-        - file: 07_results_test_system.md
-    - file: 08_conclusion.md
+        - file: 07_results_model_system.md
+        - file: 08_results_test_system.md
+    - file: 09_conclusion.md
     - title: Notebooks
       children:
         - file: ./notebooks/preprocessing.ipynb
+        - file: ./notebooks/nmf_components.ipynb
         - file: ./notebooks/ground_truth_comparison.ipynb
         - file: ./notebooks/advanced_phase_map.ipynb
   bibliography:

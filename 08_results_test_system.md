@@ -1,7 +1,7 @@
 ---
 title: The test system
 numbering:
-  enumerator: 6.%s
+  enumerator: 7.%s
 ---
 
 For the Al-Mg-Si-Cu alloy test dataset, template patterns were found by NMF-based selection. 

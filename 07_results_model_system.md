@@ -1,7 +1,7 @@
 ---
 title: The model system
 numbering:
-  enumerator: 5.%s
+  enumerator: 6.%s
 ---
 
 [](#fig_priority) presents an interactive figure where the six phase maps resulting from using the three ways of defining templates (A: simulations; B: manual; C: NMF) and two ways of phase labelling (maximum NCC; prioritisation scheme), together with the ground truth. 

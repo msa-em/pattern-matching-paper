@@ -1,7 +1,7 @@
 ---
 title: Pattern matching
 numbering:
-  enumerator: 4.%s
+  enumerator: 5.%s
 ---
 
 The major steps in the pattern matching workflow after pre-processing is schematically presented in Figure [](#fig_pm) for the model dataset. 
