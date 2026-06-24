@@ -47,7 +47,7 @@ After inspection of NMF results for a range of number of components, 27 componen
 It must be underlined that although the number of components is important, searching for an optimal number of components is unnecessary within this workflow. 
 As long as the number of components is high enough so that all the unique patterns are represented in separate components, templates can be found by NMF-guided selection, as described in the following. 
 
-:::{figure} #app:nmf_components
+:::{figure} #app:nmf_components_widget
 :name: fig_nmf
 :placeholder: ./figures/nmf_placeholder.png
 Interactive plot showing NMF results for the model dataset. Loadings and factors are shown for a user-selected number of components in the range of 1 to 20. The navigation and signal masks are displayed in white on the loadings and factors, respectively. 
