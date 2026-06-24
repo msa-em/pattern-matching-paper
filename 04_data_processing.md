@@ -12,7 +12,7 @@ All major data analysis steps are described with examples in the following.
 The pre-processing steps are schematically summarised in [](#fig_data_process), and consist of: 
 (1.0) direct beam centring, (1.1) signal binning and cropping to exclude periods shorter than the $\lbrace220\rbrace$ Al reflections, (1.2) summation of half-patterns, (1.3) cross-correlating the patterns with a binary disk, and (1.4) thresholding the patterns. 
 Centering the direct beam in (1.0) is a mandatory first step, while steps (1.1) and (1.2) greatly reduce the data size and increase the signal-to-noise ratio. 
-Template matching the patterns with a binary disk (1.3) effectively enhances each Bragg disk, which makes it a beneficial step prior to thresholding or prior to peak finding to locate Bragg disks, as has also been noted in previous work [@Savitsky2021; @Francis2024]. 
+Template matching the patterns with a binary disk (1.3) effectively enhances each Bragg disk, which makes it a beneficial step prior to thresholding or prior to peak finding to locate Bragg disks, as has also been noted in previous work [@Savitzky2021; @Francis2024]. 
 In the last step (1.4) all intensities below a manually set threshold value are set to zero. 
 
 :::{figure} ./figures/data_processing.png 
