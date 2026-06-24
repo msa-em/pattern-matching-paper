@@ -28,10 +28,10 @@ project:
   license: CC-BY-4.0
   #banner: banner.png
   #thumbnail: thumbnail.webp
-  date: 2026-06-18
+  date: 2026-06-24
   history:
-    submitted: 2026-06-30
-    published: 2026-12-31
+    submitted: 2026-06-26
+    published: 2026-00-00
   requirements:
     - 'pm-paper-env.yml'
   resources:
@@ -48,6 +48,10 @@ project:
       email: jorgen.sorhaug@sintef.no
       orcid: 0009-0004-3482-9199
       affiliations:
+        - id: ify
+          department: Department of Physics
+          institution: Norwegian University of Science and Technology (NTNU)
+          address: Trondheim, Norway
         - id: sintef
           department: Department of Materials Technology
           institution: SINTEF Manufacturing
@@ -67,9 +71,6 @@ project:
       orcid: 0000-0002-4274-5794
       affiliations:
         - id: ify
-          department: Department of Physics
-          institution: Norwegian University of Science and Technology (NTNU)
-          address: Trondheim, Norway
       roles:
         - Funding acquisition
         - Project administration
@@ -107,7 +108,7 @@ project:
   toc:
     - file: 00_index.md
     - file: 01_introduction.md
-    - title: Materials and Methods
+    - title: Materials and methods
       children:
         - file: 02_materials.md
         - file: 03_data_collection.md

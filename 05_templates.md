@@ -32,17 +32,19 @@ Illustration of defining template patterns by approach (B) manual selection, whi
 
 ## (C) NMF-guided selection
 NMF was performed on the pre-processed dataset using the scikit-learn [@sklearn] implementation in hyperspy [@hyperspy]. 
-A signal mask was applied to exclude Al reflections. 
-In addition, a navigation mask was used to exclude regions with patterns that did not show any other reflections than those from Al, as determiend based on peak finding. 
-Applying the masks and the specific pre-processing routine described earlier both significantly reduce the data size and in turn the random acess memory required to run the NMF algorithm. 
+A signal mask was applied to exclude Al reflections and signals at higher scattering angles. 
+In addition, a navigation mask was used to exclude real-space regions with patterns that did not show any other reflections than those from Al, as determined based on peak finding. 
+Applying the masks and the specific pre-processing routine described earlier significantly reduce the data size and complexity, which in turn reduces the random acess memory required to run the NMF algorithm. 
 
-The result of NMF is known to be highly sensitive to the number of chosen output components [@Martineau2019; @Bergh2020; @Allen2021]. 
+The NMF result is known to be highly sensitive to the number of chosen output components [@Martineau2019; @Bergh2020; @Allen2021]. 
 Therefore, singular value decomposition was computed prior to NMF, and the corresponding scree plot, which shows the fraction of total variance accounted for by each component, was inspected to find an adequate first estimate. 
-NMF was run several times, both with a lower and a higher number of components than the first estimate, and the results were inspected manually, before a final number was selected. 
+NMF was run several times, both with a lower and a higher number of components than the first estimate, and the results were inspected manually before a final number was selected. 
 [](#fig_nmf) presents an interactive plot where the NMF output for the model dataset is displayed for a user-selected number of components in the range of 1 to 20. 
-Five components were chosen for the model dataset since these adequately describe the five unique precipitate patterns. 
+Five components were chosen since these adequately describe the five unique precipitate patterns. 
 A lower number failed to include all categories, while a higher number lead to signals belonging to the same category being split across various components. 
-Although the number of components is important, it must be underlined that searching for an optimal number of components is unnecessary within this workflow. 
+For the test system, it was less straightforward to find a suitable number since this system contains more precipitate categories and some highly similar unique patterns. 
+After inspection of NMF results for a range of number of components, 27 components were chosen for the test system dataset. 
+It must be underlined that although the number of components is important, searching for an optimal number of components is unnecessary within this workflow. 
 As long as the number of components is high enough so that all the unique patterns are represented in separate components, templates can be found by NMF-guided selection, as described in the following. 
 
 :::{figure} #app:nmf_components
@@ -52,9 +54,8 @@ Interactive plot showing NMF results for the model dataset. Loadings and factors
 :::
 
 The process of NMF-based template selection is illustated in [](#fig_templates_C). 
-The components from NMF were manually categorised based on pre-knowledge of the precipitate crystal structures, orientation relationships and diffraction patterns. 
-The categorised loading maps were thresholded. 
-For each thresholded loading, the 10\% most intense pixels were taken to define region masks in real space. 
+The components from NMF were manually categorised based on pre-knowledge of the crystal structures, orientation relationships and diffraction patterns of the precipitates. 
+The categorised loading maps were thresholded before the 10\% most intense pixels in each map were taken to define region masks in real space. 
 If signals from one category were split into several components, the respective loading maps could be summed prior to thresholding, or alternatively, region masks could be summed to yield one distinct region mask per category. 
 Within each region, patterns were extracted from the pre-processed dataset and averaged to yield template patterns. 
 This means that the NMF results were not used directly; NMF was rather used to guide the choice of distinct regions, and the template patterns were extracted from the pre-processed SPED dataset itself. 
@@ -63,7 +64,7 @@ This stands in contrast to previous work [@Sunde2018; @Thronsen2024] and provide
 
 :::{figure} ./figures/template_selections_C.png 
 :name: fig_templates_C
-Illustration of defining template patterns by approach (C) NMF-guided selection. The dataset is masked to reduce the data size, before NMF expresses the dataset as a combination of factors and loadings. The number of components for NMF is selected manually, and the resulting factors and loadings are categorised manually based on pre-knowledge. The loadings that correspond to unique categories are thresholded to obtain region masks. The template patterns, shown to the right, are obtained by averaging the pre-processed dataset over each region. 
+Illustration of defining template patterns by approach (C) NMF-guided selection. The dataset is masked to reduce the data size and complexity, before NMF expresses the dataset as a combination of factors and loadings. The number of components for NMF is selected manually, and the resulting factors and loadings are categorised manually based on pre-knowledge. The loadings that correspond to unique categories are thresholded to obtain region masks. The template patterns, shown to the right, are obtained by averaging the pre-processed dataset over each region. 
 :::
 
 # Overlap templates

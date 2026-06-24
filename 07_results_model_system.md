@@ -4,13 +4,13 @@ numbering:
   enumerator: 6.%s
 ---
 
-[](#fig_priority) presents an interactive figure where the six phase maps resulting from using the three ways of defining templates (A: simulations; B: manual; C: NMF) and two ways of phase labelling (maximum NCC; prioritisation scheme), together with the ground truth. 
-The phase maps are diplayed besides their corresponding difference maps that shows correspondence to ground truth in black and any discrepancies in white. 
-The main difference between the two phase labelling strategies is whether or not the $\theta$'$_{\langle001\rangle}$ plates that give only a few weak Bragg disks are prioritised over overlapping T$_{1}$ segments. 
-Mislabeling at or near phase interfaces is a common feature in all the phase maps, due to weak precipitate Bragg disks, and/or strain causing a difference in Bragg disk positions. 
+[](#fig_priority) presents an interactive figure where the six phase maps resulting from using the three ways of defining templates (A: simulations; B: manual; C: NMF) and two ways of phase labelling (maximum NCC; prioritisation scheme), each can be diaplyed next to the ground truth phase map. 
+A difference map is also presented that shows correspondence to ground truth in black and any discrepancies in white. 
+The main difference between the two phase labelling strategies is whether or not the $\theta$'$_{\langle001\rangle}$ plates (blue) that give only a few weak Bragg disks are prioritised over overlapping T$_{1}$ segments (green). 
+Mislabeling at or near phase interfaces is a common feature in all the phase maps, due to weak precipitate Bragg disks, and/or interface effects and strain. 
 The same was reported in the previous study [@Thronsen2024], where it was also pointed out that such artefacts are relatively harmless unless precipitate size statistics is to be extracted from the phase maps. 
 The accuracies of the phase maps relative to the ground truth are summarised in [](#table3). 
-All yield accuracies of $\approx$99\%, demonstrating a strong agreement between the derived phase maps, the ground truth phase map, and the previously presented results [@Thronsen2024]. 
+All yield accuracies ${\gt}$98.5\%, demonstrating strong agreement between the derived phase maps, the ground truth, and the previously presented results [@Thronsen2024]. 
 
 :::{figure} #app:ground_truth_comparison
 :name: fig_priority
@@ -37,9 +37,9 @@ Al-Cu-Li alloy ground truth phase map displayed next to a phase map made by PM a
   - 98.99
 ```
 
-To look more in detail into some of the mislabelled regions, the phase map produced from kinematical simulations are used, since this one has the most discrepancies. 
-The phase map and difference map are shown in [](#fig_sim)(a) and (b), respectively, where two regions with mislabelled $\theta$'$_{\langle100\rangle}$ precipitates and a third region containing a mislabelled T$_{1}$ segment, are highlighted.
-These areas are magnified and overlayed with the difference map in [](#fig_sim)(c)-(e). 
+To examine some of the mislabelled regions in more detail, the phase map produced by using approach (A) simulated templates is used, since this one has the most discrepancies. 
+The phase map and difference map are shown in [](#fig_sim)(a) and (b), respectively, where two regions with mislabelled $\theta$'$_{\langle100\rangle}$ precipitates (orange) and a third region containing a mislabelled T$_{1}$ segment (green), are highlighted.
+These three areas are magnified and overlayed with the difference map in [](#fig_sim)(c)-(e). 
 One correctly labelled and one incorrectly labelled single pre-processed PED pattern are presented under each region in (c)-(e). 
 These patterns are overlayed with dashed circles that represent the Bragg spots of the simulated templates that would be correct according to the ground truth phase map. 
 For (c) and (d), the mislabelled regions correspond to bent $\theta$'$_{\langle100\rangle}$ precipitates, and the corresponding patterns show weaker and less Bragg spots compared to the correctly labelled patterns. 
@@ -49,20 +49,22 @@ The pattern in the mislabelled region does not, however, correspond to this simu
 
 :::{figure} ./figures/pm_sim.png
 :name: fig_sim
-PM of the model dataset with simulated templates. (a) Phase map, and (b) difference map with respect to the ground truth phase map. Three regions are highlighed where precipitate segments are incorrectly labelled according to the ground truth. (c)-(e) Zoomed-in maps from the highlighted regions with single PED patterns from indicated regions included underneath. The patterns are pre-processed until step 1.2 (left) and 1.4 (right). The patterns in (c) and (d) are overlayed with dashed circles that represent the disk positions in the two $\theta$'$_{\langle100\rangle}$ templates that are correct based on the ground truth. The diffraction patterns in (e) are overlayed with dashed circles showing the disk positions in templates from the expected T$_{1}$ phase. All PED patterns are plotted in log-scale, and overlayed with stars representing the centre spot (red) and the Al reflections (white).
+PM of the model dataset with simulated templates (A). (a) Phase map, and (b) difference map with respect to the ground truth. Three regions are highlighed where precipitate segments are incorrectly labelled according to the ground truth. (c)-(e) Zoomed-in maps from the highlighted regions with single PED patterns from indicated regions included underneath. The patterns are pre-processed until step 1.2 (left) and 1.4 (right). The patterns in (c) and (d) are overlayed with dashed circles that represent the disk positions in the two $\theta$'$_{\langle100\rangle}$ templates that are correct based on the ground truth. The diffraction patterns in (e) are overlayed with dashed circles showing the disk positions in templates from the expected T$_{1}$ phase. All PED patterns are plotted in log-scale, and overlayed with stars representing the centre spot (red) and the Al reflections (white).
 :::
 
 One of the main advantages of the PM workflow is that additional templates can easily be included after the first phase mapping step. 
 To demonstrate this possibility, additional template patterns were searched for in regions with low NCC scores and added to the template bank. 
 Furthermore, template patterns representing pairs of overlapping crystals were also defined and included in the template bank to further highlight the flexibility of the PM approach. 
-[](#fig_advanced) presents the phase map obtained after including overlap templates together with additional templates found by NMF-guided selection (approach C). 
-The map presents the same phases as in the previous phase maps, but includes new labels like overlapping phases and the bent $\theta$'$_{\langle100\rangle}$ segments discussed previously. 
-The missing unfamiliar T$_{1}$ segment highlighted in [](#fig_sim)(e) is now included and labelled as 'x'. 
-This updated phase map thus demonstrates that both pre-known and unfamiliar patterns can be identified and mapped after an additional iteration of searching for new templates. 
-This map also shows that overlapping crystals can be correctly labelled along with non-overlapping crystals, which suggests that the previously used phase prioritisation scheme [@Thronsen2024] becomes unnecessary. 
+[](#fig_advanced) presents an interactive plot where the user can choose between four types of template banks and inspect the resulting maximum NCC score map and phase map. 
+The first template bank option ('NMF') only comprises the original templates found via the first round of NMF-based template selection, while the second option ('NMF + overlap') also contains the corresponding overlap patterns made by summing pairs of these original template patterns. 
+The third and forth option also includes additional templates found by searching for new templates in regions with low maximum NCC scores using NMF-guided selection ('NMF + overlap + NMF') or clustering-based selection ('NMF + overlap + clustering'). 
+The latter two phase maps therefore contain new labels, which correspond to the bent $\theta$'$_{\langle100\rangle}$ segments discussed in the previous paragraph. 
+The missing unfamiliar T$_{1}$ segment highlighted in [](#fig_sim)(e) is also incorporated and labelled 'x'. 
+These updated phase maps thus demonstrate that both pre-known and unfamiliar patterns can be identified and mapped after an additional iteration of searching for new templates. 
+Moreover, overlapping crystals can be correctly labelled along with non-overlapping crystals, which suggests that the previously used phase prioritisation scheme [@Thronsen2024] becomes unnecessary. 
 
 :::{figure} #app:advanced_phase_map
 :name: fig_advanced  
 :placeholder: ./figures/advanced_placeholder.png
-Al-Cu-Li alloy phase map from using NMF twice to identify template patterns from the SPED dataset. The phase map shows both single and pairs of overlapping precipitate phases, bent precipitate segments, and an unfamiliar crystal labelled as 'x'. 
+Maximum NCC score map and phase map for the Al-Cu-Li model alloy dataset for a user-selected type of template bank. Based on the template bank, the phase map may show both single and pairs of overlapping precipitate phases ('+'), bent precipitate segments ($_{-1/2-2/3}$), and an unfamiliar category ('x'). 
 :::
