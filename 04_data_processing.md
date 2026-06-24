@@ -25,7 +25,7 @@ Schematic showing SPED data pre-processing, which includes (1.0) centring the di
 The disk radius for step (1.3) can be explored, together with the threshold value for step (1.4). 
 In this work the disk radius was set to 3 pixels and the threshold to 0.3.
 
-:::{figure} #app:preprocessing
+:::{figure} #app:preprocessing_widget
 :name: fig_preprocessing
 :placeholder: ./figures/preprocessing_placeholder.png
 Interactive pre-porcessing of six representative patterns from the Al-Cu-Li model dataset. The top row shows the patterns after summation of half-patterns (1.2), plotted on log scale. The middle row presents the same patterns after cross-correlating them with a binary disk (1.3) with a user-selected radius. The bottom row displays the same patterns after thresholding (1.4), where all intensities that are below a user-selected threshold value are set to zero.
