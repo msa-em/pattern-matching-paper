@@ -43,7 +43,7 @@ These six unique patterns are found in the model SPED dataset and one example of
 The test SPED dataset was collected from an Al-Mg-Si-Cu alloy. 
 Details on the chemical composition, thermo-mechanical processing, and TEM specimen preparation are provided elsewhere [@sorhaug2026]. 
 Previous studies on this specific alloy show that the precipitate types that typically form are $\beta''$, L, C, $\beta'$, $\beta'_{Cu}$, Q', and Q [@Sunde2018; @Sunde2020]. 
-They grow as needles, rods or laths along the main axes of the matrix and have specific orientation relationships with the host \hl{lattice} [@Saito2018; @Andersen2018]. 
+They grow as needles, rods or laths along the main axes of the Al matrix and have specific orientation relationships with the Al lattice [@Saito2018; @Andersen2018]. 
 Their similar shapes and sizes make them difficult to discern based on morphology. 
 Some single precipitate particles are even composed of a mixture of multiple phases, referred to as hybrid precipitates. 
 [](#table2) presents information on the crystal structures of the precipitate phases. 

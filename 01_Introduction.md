@@ -29,7 +29,7 @@ Unsupervised machine learning algorithms do not require prior knowledge and comp
 NMF has been applied to 4D-STEM datasets recorded with precession [@Eggeman2015; @Martineau2019; @Bergh2020] and without precession [@Allen2021; @Uesugi2021; @Bruefach2022]. 
 It approximates the dataset as a linear combination of reciprocal-space patterns (referred to as factors) that are associated with real-space weighting maps (referred to as loadings). 
 NMF offers advantages for datasets that contain a limited number of unique but recurring features, since it can reduce the dimensionality and increase the signal-to-noise ratio. 
-One such case where NMF-based analysis works well is SPED data from aluminium alloys that contain nanoscale precipitates with specific orientation relationships with the host lattice [@Sunde2018; @Christiansen2019]. 
+One such case where NMF-based analysis works well is SPED data from aluminium (Al) alloys that contain nanoscale precipitates with specific orientation relationships with the host lattice [@Sunde2018; @Christiansen2019]. 
 Further post-processing and classification are, however, required to obtain phase maps based on the output from NMF. 
 
 A recent study compares four of the beforementioned phase mapping approaches for the case of an Al-Cu-Li model alloy on the basis of a ground truth phase map [@Thronsen2024]. 
