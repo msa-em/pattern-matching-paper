@@ -15,7 +15,7 @@ project:
     - Al-Cu-Li
     - Al-Mg-Si-Cu
     - precipitates
-  github: https://github.com/tinabe/pattern-matching-paper
+  github: https://github.com/msa-em/pattern-matching-paper
   jupyter: true
   # jupyter:
   #   server:
