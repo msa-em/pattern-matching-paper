@@ -6,7 +6,7 @@ numbering:
 
 ## The Al-Cu-Li alloy model system
 
-The model SPED dataset was obatined from the Zenodo repository [@Thronsen2022zenodo]. 
+The model SPED dataset was obtained from the Zenodo repository [@Thronsen2022zenodo]. 
 Details on the Al-Cu-Li alloy composition, thermo-mechanical treatment, and TEM specimen preparation are provided in a previous study [@Thronsen2024]. 
 The alloy contains two distinct and co-existing plate-shaped phases, namely $\theta$'-Al$_{2}$Cu and T$_{1}$-Al$_{2}$CuLi. 
 Their space groups and lattice parameters are listed in [](#table1). 
@@ -46,9 +46,9 @@ Previous studies on this specific alloy show that the precipitate types that typ
 They grow as needles, rods or laths along the main axes of the matrix and have specific orientation relationships with the host \hl{lattice} [@Saito2018; @Andersen2018]. 
 Their similar shapes and sizes make them difficult to discern based on morphology. 
 Some single precipitate particles are even composed of a mixture of multiple phases, referred to as hybrid precipitates. 
-[](#table2) lists information on the crystal structures of the precipitate phases. 
-The precipitates are built on a common lattice called the Si network, which exhibits a close to hexagonal symmetry along their long axes [@Marioara2007]. 
-The L phase is partly disordered and consists of sub-units of the C and Q' phases, meaning that it does not have one specific crystal structure, yet, it is still built on the Si network [@Marioara2007]. 
+[](#table2) presents information on the crystal structures of the precipitate phases. 
+The precipitates are built on a common lattice called the Si network or the QP lattice [@Cayron1999], which exhibits a close to hexagonal symmetry along their main extension [@Marioara2007; @Andersen2017; @Andersen2018]. 
+The L phase is partly disordered and consists of sub-units of the C and Q' phases, meaning that it does not have one specific crystal structure, yet it is still built on the Si network [@Marioara2007]. 
 Thus, there are several challenges to overcome to achieve accurate SPED phase mapping of this alloy, including both similar and unknown structures. 
 
 ```{list-table} Crystal structure information for the Si network and selected phases in Al-Mg-Si-Cu alloys. 

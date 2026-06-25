@@ -4,7 +4,7 @@ numbering:
   enumerator: 5.%s
 ---
 
-The major steps in the pattern matching workflow is schematically presented in Figure [](#fig_pm) for the model dataset. 
+The major steps in the pattern matching workflow are schematically presented in Figure [](#fig_pm) for the model dataset. 
 After pre-processing and defining template patterns (step 2.0), matching is performed by calculating the normalised cross-correlation (NCC) score to all the template patterns, for each pre-processed PED pattern in the SPED dataset (step 2.1). 
 The NCC match score is defined as [@Lewis1995]: 
 \begin{align}
@@ -29,6 +29,6 @@ The NCC score map is thresholded to reveal the lowest NCC scores, and additional
 This option is included in the advanced notebook (2B) on GitHub [@PMgithub] which presents two ways of finding additional templates for the model dataset; NMF (as explained earlier) and a density-based clustering algorithm. 
 
 For the test system, additional templates were sought after using NMF. 
-To capture all of the unique pattern types, the cycle of matching and searching for additional templates was repeted three times. 
+To capture all the unique pattern types, the cycle of matching and searching for additional templates was repeated three times. 
 In addition, since the L phase patterns closely resemble those from the C phase, the patterns initially labelled as L or C were manually re-inspected to verify correct labelling. 
 If a specific L or C pattern had been mislabelled, that pattern was added to the template bank before the matching was redone and the phase map updated. 

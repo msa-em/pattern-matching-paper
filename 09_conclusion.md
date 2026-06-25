@@ -14,8 +14,7 @@ This enables both pre-known and previously unfamiliar phases to be identified an
 
 The PM workflow is further tested on a more challenging SPED dataset from an Al-Mg-Si-Cu alloy. 
 This alloy contains precipitate phases that are partially disordered, some highly similar phases that should be distinguished, and several hybrid precipitates composed of multiple phases. 
-The results are assessed for specific precipitates by comparing the phase labelling achieved by PM to manual labelling performed on atomically-resolved HAADF-STEM images, and a strong agreement is seen. 
-
+The results are assessed for specific precipitates by comparing the phase labelling achieved by PM to manual labelling performed on atomically resolved HAADF-STEM images, and a strong agreement is seen. 
 
 By exploiting the advantage of updating the template bank, PM can be used to successfully map the spatial distribution of phases in more challenging cases like Al-Mg-Si-Cu alloys. 
 The workflow is available open-source and can easily be adjusted and expanded to fit other material systems and challenges. 
