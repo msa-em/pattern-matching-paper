@@ -3,13 +3,14 @@ version: 1
 project:
   id:  msa-em-pattern-matching-paper-1
   title: 'Analysing scanning precession electron diffraction data using pattern matching: phase mapping of aluminium precipitates'
-  description: Repo for PM paper. This needs to be more descriptive.
+  description: A pattern matching workflow, which includes effective pre-processing routines and several ways of defining template patterns, is presented and demonstrated for phase mapping of precipitates in two aluminium alloy systems.
   short_title: Pattern matching
   keywords:
     - four-dimensional scanning transmission electron microscopy
     - scanning precession electron diffraction
     - phase mapping
     - pattern matching
+    - non-negative matrix factorisation
     - aluminium alloys
     - Al-Cu-Li
     - Al-Mg-Si-Cu
@@ -98,7 +99,6 @@ project:
     NCC: normalised cross-correlation
     FFT: fast Fourier transform
     HAADF: high angle annular dark field
-    HRTEM: high resolution transmission electron microscopy
   toc:
     - file: 00_index.md
     - file: 01_introduction.md
