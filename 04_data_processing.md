@@ -17,7 +17,7 @@ In the last step (1.4) all intensities below a manually set threshold value are 
 
 :::{figure} ./figures/data_processing.png 
 :name: fig_data_process
-:width: 65%
+:width: 333px
 Schematic showing SPED data pre-processing, which includes (1.0) centring the direct beam in each PED pattern, (1.1) binning and cropping the patterns, (1.2) summing half-patterns, (1.3) cross-correlating each pattern with a binary disk, and (1.4) thresholding the patterns. A representative T$_{1-2}$ pattern from the model dataset serves as a representative example pattern.
 :::
 

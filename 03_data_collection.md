@@ -16,7 +16,7 @@ A schematic figure of the data collection is presented in [](#fig_data_collect),
 
 :::{figure} ./figures/data_collection.png 
 :name: fig_data_collect
-:width: 65%
+:width: 333px
 Schematic figure showing SPED data collection in the Al-Cu-Li model alloy system. The TEM specimen is represented by the ground truth phase map, and six unique PED patterns are displayed. 
 :::
 
