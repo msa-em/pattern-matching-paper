@@ -39,9 +39,9 @@ The top part labelled Si network is, on the other hand, more complex.
 All the precipitates are built on an underlying common Si network, alternatively referred to as the QP lattice, which also holds for partly disordered precipitate regions [@Cayron1999; @Marioara2007; @Andersen2017]. 
 The HAADF-STEM image reveals that the top region is partly disordered and contains one or two unit cells of both $\beta'$ and Q', in addition to Q'/C sub-units.
 These Q' fragments, together with its growth direction along $\langle510\rangle_{\textrm{Al}}$, indicate that this region can be labelled as the precursor Q' phase (short: pre-Q'), which has also been referred to as 'S' [@Marioara2007] or 'disordered QP1' [@Ding2018] in previous work. 
-The PED pattern from this region is dominated by spots originating from the Si network, and no single-phase characteristics can be picked out, hence the classification as Si network based on PM. 
+The PED pattern from this region is dominated by spots originating from the Si network, and no single-phase characteristics can be picked out, hence the classification is Si network based on PM. 
 This highlights that although the PM method can correctly label segments of different phases within hybrid precipitates, it cannot necessarily label sub-regions within partly disordered precipitate segments. 
-In any case, the pre-Q' phase is indeed partly disordered, meaning that this segment is also manually classified as partly disordered based on the HAADF-STEM image, which underscores the correspondence between the methods. 
+In any case, the pre-Q' region is indeed partly disordered, meaning that this segment is also manually classified as partly disordered based on the HAADF-STEM image, which underscores the correspondence between the methods. 
 
 - Precipitate C is according to the phase map a hybrid between $\beta''$ and the Si network. 
 The HAADF-STEM image shows connected $\beta''$ sub-units, known as $\beta''$-eyes, together with a slightly disordered part to the right. 

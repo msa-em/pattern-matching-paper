@@ -12,12 +12,11 @@ All major data analysis steps are described with examples in the following.
 The pre-processing steps are schematically summarised in [](#fig_data_process), and consist of: 
 (1.0) direct beam centring, (1.1) signal binning and cropping to exclude periods shorter than the $\lbrace220\rbrace$ Al reflections, (1.2) summation of half-patterns, (1.3) cross-correlating the patterns with a binary disk, and (1.4) thresholding the patterns. 
 Centering the direct beam in (1.0) is a mandatory first step, while steps (1.1) and (1.2) greatly reduce the data size and increase the signal-to-noise ratio. 
-Template matching the patterns with a binary disk (1.3) effectively enhances each Bragg disk, which makes it a beneficial step prior to thresholding or prior to peak finding to locate Bragg disks, as has also been noted in previous work [@Savitzky2021; @Francis2024]. 
+Template matching the patterns with a binary disk (1.3) effectively enhances each Bragg disk and is a beneficial step prior to thresholding or prior to peak finding to locate Bragg disks, as has also been exploited in previous work [@Savitzky2021; @Francis2024]. 
 In the last step (1.4) all intensities below a manually set threshold value are set to zero. 
 
 :::{figure} ./figures/data_processing.png 
 :name: fig_data_process
-:width: 333px
 Schematic showing SPED data pre-processing, which includes (1.0) centring the direct beam in each PED pattern, (1.1) binning and cropping the patterns, (1.2) summing half-patterns, (1.3) cross-correlating each pattern with a binary disk, and (1.4) thresholding the patterns. A representative T$_{1-2}$ pattern from the model dataset serves as a representative example pattern.
 :::
 
@@ -28,7 +27,7 @@ In this work the disk radius was set to 3 pixels and the threshold to 0.3.
 :::{figure} #app:preprocessing_widget
 :name: fig_preprocessing
 :placeholder: ./figures/preprocessing_placeholder.png
-Interactive pre-processing of six representative patterns from the Al-Cu-Li model dataset. The top row shows the patterns after summation of half-patterns (1.2), plotted on log scale. The middle row presents the same patterns after cross-correlating them with a binary disk (1.3) with a user-selected radius. The bottom row displays the same patterns after thresholding (1.4), where all intensities that are below a user-selected threshold value are set to zero.
+Interactive pre-processing of six representative unique patterns from the Al-Cu-Li model dataset. The top row shows the patterns after summation of half-patterns (1.2), plotted on log scale. The middle row presents the same patterns after cross-correlating them with a binary disk (1.3) with a user-selected radius. The bottom row displays the same patterns after thresholding (1.4), where all intensities that are below a user-selected threshold value are set to zero.
 :::
 
 The model dataset and the test dataset were pre-processed in the same way, with one exception. 

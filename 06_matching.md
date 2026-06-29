@@ -4,7 +4,7 @@ numbering:
   enumerator: 5.%s
 ---
 
-The major steps in the pattern matching workflow are schematically presented in Figure [](#fig_pm) for the model dataset. 
+The major steps in the PM workflow are schematically presented in Figure [](#fig_pm) for the model dataset. 
 After pre-processing and defining template patterns (step 2.0), matching is performed by calculating the normalised cross-correlation (NCC) score to all the template patterns, for each pre-processed PED pattern in the SPED dataset (step 2.1). 
 The NCC match score is defined as [@Lewis1995]: 
 \begin{align}
@@ -16,7 +16,7 @@ The signal mask blocks out the direct beam region, the Al Bragg disks and higher
 
 :::{figure} ./figures/pm.png
 :name: fig_pm
-Schematic workflow of pattern matching: (2.0) Define template patterns, (2.1) match each pattern with all the templates within a signal-masked region, (2.2) label patterns according to the match scores, and (2.3) identify unlabelled patterns that can be used as basis for defining new templates.
+Illustration of the PM workflow: (2.0) Define template patterns, (2.1) match each pattern with all the templates within a signal-masked region, (2.2) label patterns according to the match scores, and (2.3) identify unlabelled patterns that can be used as basis for defining new templates.
 :::
 
 After calculating the match scores, the patterns are labelled to produce a phase map (step 2.2). 

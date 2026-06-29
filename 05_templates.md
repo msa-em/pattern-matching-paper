@@ -21,7 +21,7 @@ Illustration of defining template patterns by approach (A) simulations, which in
 
 ## (B) Manual selection
 Five real-space regions were drawn manually, and the pre-processed SPED dataset was averaged over each of these regions to yield five template patterns. 
-The regions were chosen based on pre-knowledge of the known and distinct morphologies of each precipitate type and recognising these morphologies in a virtual annular dark-field (VADF) image. 
+The regions were chosen based on pre-knowledge of the distinct morphologies of each precipitate type and recognising these morphologies in a virtual annular dark-field (VADF) image. 
 The VADF image was created by applying a mask that blocked out the direct beam and the Al matrix reflections and then summing the intensity in each PED pattern. 
 [](#fig_templates_B) shows the VADF image with the selected regions, alongside the templates.
 
@@ -59,12 +59,12 @@ The categorised loading maps were thresholded before the 10\% most intense pixel
 If signals from one category were split into several components, the respective loading maps could be summed prior to thresholding, or alternatively, region masks could be summed to yield one distinct region mask per category. 
 Within each region, patterns were extracted from the pre-processed dataset and averaged to yield template patterns. 
 This means that the NMF results were not used directly; NMF was rather used to guide the choice of distinct regions, and the template patterns were extracted from the pre-processed SPED dataset itself. 
-For this reason, neither the number of components chosen for NMF, nor the thresholding of loadings, need to be optimised within this workflow. 
+For this reason, neither the number of components chosen for NMF, nor the thresholding of loadings, need to be optimised within this PM workflow. 
 This stands in contrast to previous work [@Sunde2018; @Thronsen2024] and provides large benefits. 
 
 :::{figure} ./figures/template_selections_C.png 
 :name: fig_templates_C
-Illustration of defining template patterns by approach (C) NMF-guided selection. The dataset is masked to reduce the data size and complexity, before NMF expresses the dataset as a combination of factors and loadings. The number of components for NMF is selected manually, and the resulting factors and loadings are categorised manually based on pre-knowledge. The loadings that correspond to unique categories are thresholded to obtain region masks. The template patterns, shown to the right, are obtained by averaging the pre-processed dataset over each region. 
+Illustration of defining template patterns by approach (C) NMF-guided selection. The pre-processed dataset is masked to reduce the data size and complexity, before NMF expresses the dataset as a combination of factors and loadings. The number of components for NMF is selected manually, and the resulting factors and loadings are categorised manually based on pre-knowledge. The loadings that correspond to unique categories are thresholded to obtain region masks. The template patterns, shown to the right, are obtained by averaging the pre-processed dataset over each region. 
 :::
 
 # Overlap templates

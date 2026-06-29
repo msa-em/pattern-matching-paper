@@ -9,7 +9,7 @@ project:
     - four-dimensional scanning transmission electron microscopy
     - scanning precession electron diffraction
     - phase mapping
-    - pattern matching
+    - template matching
     - non-negative matrix factorisation
     - aluminium alloys
     - Al-Cu-Li
@@ -25,7 +25,7 @@ project:
   license: CC-BY-4.0
   #banner: banner.png
   #thumbnail: thumbnail.webp
-  date: 2026-06-26
+  date: 2026-06-29
   requirements:
     - 'Dockerfile'
     - requirements.txt

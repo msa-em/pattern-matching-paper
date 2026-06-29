@@ -15,7 +15,7 @@ All yield accuracies ${\gt}$98.5\%, demonstrating strong agreement between the d
 :::{figure} #app:ground_truth_comparison_widget
 :name: fig_priority
 :placeholder: ./figures/ground_truth_placeholder.png
-Al-Cu-Li alloy ground truth phase map displayed next to a phase map made by PM and the difference between the two. Template patterns are either (A) kinematically simulated, (B) averaged from manually selected regions in the dataset, or (C) averaged from the dataset according to thresholded NMF loadings. Phase labelling scheme is either based on maximum NCC score or according to the phase priority: (1) $\theta'_{\langle100\rangle}$, (2) T$_{1}$, and (3) $\theta'_{\langle001\rangle}$.
+Al-Cu-Li alloy ground truth phase map displayed next to a phase map made by PM. The difference between the two is shown below. Template patterns are either (A) kinematically simulated, (B) averaged from manually selected regions in the dataset, or (C) averaged from the dataset according to NMF results. The phase labelling scheme is either based on maximum NCC score or according to the phase priority: (1) $\theta'_{\langle100\rangle}$, (2) T$_{1}$, and (3) $\theta'_{\langle001\rangle}$.
 :::
 
 ```{list-table} Phase mapping accuracy for three different approaches (A-C) of defining template patterns for the Al-Cu-Li model system dataset. The accuracy is obtained by comparing to ground truth and is reported for two labelling schemes: highest NCC score and phase priority. 
@@ -43,9 +43,9 @@ These three areas are magnified and overlayed with the difference map in [](#fig
 One correctly labelled and one incorrectly labelled single pre-processed PED pattern are presented under each region in (c)-(e). 
 These patterns are overlayed with dashed circles that represent the Bragg spots of the simulated templates that would be correct according to the ground truth phase map. 
 For (c) and (d), the mislabelled regions correspond to bent $\theta$'$_{\langle100\rangle}$ precipitates, and the corresponding patterns show weaker and less Bragg spots compared to the correctly labelled patterns. 
-The mislabelled segment inside the T$_{1}$ precipitate, shown in Figure [](#fig_sim)(e), is a common feature in all the phase maps. 
+The mislabelled segment inside the T$_{1}$ precipitate, shown in [](#fig_sim)(e), is a common feature in all the phase maps. 
 The selected PED patterns in (e) are overlayed with the simulated Bragg spots corresponding to the template of T$_{1-2}$, which is expected based on the ground truth. 
-The pattern in the mislabelled region does not, however, correspond to this simulated pattern, and the pattern represents a new unique diffraction pattern that was not included in the original template bank. 
+The pattern in the mislabelled region does not, however, appear similar to this simulated pattern, and the pattern represents a new unique diffraction pattern that was not included in the original template bank. 
 
 :::{figure} ./figures/pm_sim.png
 :name: fig_sim
